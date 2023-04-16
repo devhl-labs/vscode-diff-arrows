@@ -15,7 +15,7 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./out/index.js",
+  "main": "./target/index.js",
   "contributes": {
     "configuration": {
       "title": "Diff Arrows",
@@ -60,7 +60,7 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./target/test/runTest.js"
   },
   "devDependencies": {
     "@types/vscode": "^1.77.0",
