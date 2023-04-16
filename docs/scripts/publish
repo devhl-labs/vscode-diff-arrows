@@ -1,0 +1,23 @@
+#!/bin/bash
+script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+pushd $script_dir &>/dev/null
+pushd ../.. &>/dev/null
+root=$(pwd)
+
+mkdir -p docs/releases
+
+vsce package
+
+EXT=vsix
+for i in *; do
+    if [ "${i}" != "${i%.${EXT}}" ];then
+        if [ -f "${root}/docs/releases/${i%}" ]; then
+            echo "ERROR! The file already exists. Did you change the version? $i"
+        else
+            mv $i "${root}/docs/releases/"
+        fi
+    fi
+done
+
+popd &>/dev/null
+popd &>/dev/null
