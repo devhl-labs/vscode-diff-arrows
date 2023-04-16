@@ -1,8 +1,13 @@
 {
   "name": "diff-arrows",
-  "displayName": "diff-arrows",
+  "displayName": "Diff Arrows",
   "description": "Show the next/previous change to your git repository.",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "devhl",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devhl-labs/vscode-diff-arrows"
+  },
   "engines": {
     "vscode": "^1.77.0"
   },
