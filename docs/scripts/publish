@@ -4,7 +4,7 @@ pushd $script_dir &>/dev/null
 pushd ../.. &>/dev/null
 root=$(pwd)
 
-mkdir -p docs/releases
+mkdir -p "${root}/docs/releases"
 
 vsce package
 
