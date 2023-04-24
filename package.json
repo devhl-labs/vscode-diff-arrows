@@ -45,12 +45,12 @@
         {
           "command": "diff-arrows.previous",
           "group": "navigation@-202304161",
-          "when": "config.diff-arrows.enabled && !isInDiffEditor && gitOpenRepositoryCount >= 1 && !activeEditorIsReadonly"
+          "when": "config.diff-arrows.enabled && !isInDiffEditor && gitOpenRepositoryCount >= 1 && !activeEditorIsReadonly && resourceScheme != 'untitled'"
         },
         {
           "command": "diff-arrows.next",
           "group": "navigation@-2202304162",
-          "when": "config.diff-arrows.enabled && !isInDiffEditor && gitOpenRepositoryCount >= 1 && !activeEditorIsReadonly"
+          "when": "config.diff-arrows.enabled && !isInDiffEditor && gitOpenRepositoryCount >= 1 && !activeEditorIsReadonly && resourceScheme != 'untitled'"
         }
       ]
     }
