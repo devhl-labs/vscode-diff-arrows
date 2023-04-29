@@ -2,7 +2,7 @@
   "name": "diff-arrows",
   "displayName": "Diff Arrows",
   "description": "Show the next/previous change to your git repository.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "publisher": "devhl",
   "repository": {
     "type": "git",
